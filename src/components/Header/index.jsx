@@ -8,6 +8,7 @@ import {
   Button,
   HStack,
 } from "@chakra-ui/react";
+import { theme } from "../../styles/theme";
 
 export const Header = () => {
   return (
@@ -19,28 +20,59 @@ export const Header = () => {
       borderRadius={10}
       p="15px 0"
       w="80%"
+      flexWrap="wrap"
     >
-      <Heading>&lt;Portifólio/&gt;</Heading>
+      <Heading fontSize="xl" color={theme.colors.blue[900]}>
+        &lt;Portifólio/&gt;
+      </Heading>
       <Box>
-        <Breadcrumb separator="">
+        <Breadcrumb separator="" fontWeight="700">
           <BreadcrumbItem isCurrentPage>
-            <BreadcrumbLink href="#">Home</BreadcrumbLink>
+            <BreadcrumbLink
+              href="/"
+              _hover={{
+                color: theme.colors.red[100],
+              }}
+            >
+              Home
+            </BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem>
-            <BreadcrumbLink href="/sobre-mim">Sobre Mim</BreadcrumbLink>
+            <BreadcrumbLink
+              href="/sobre-mim"
+              _hover={{
+                color: theme.colors.red[100],
+              }}
+            >
+              Sobre Mim
+            </BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem>
-            <BreadcrumbLink href="/projetos">Projetos</BreadcrumbLink>
+            <BreadcrumbLink
+              href="/projetos"
+              _hover={{
+                color: theme.colors.red[100],
+              }}
+            >
+              Projetos
+            </BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem>
-            <BreadcrumbLink href="/contatos">Contatos</BreadcrumbLink>
+            <BreadcrumbLink
+              href="/contatos"
+              _hover={{
+                color: theme.colors.red[100],
+              }}
+            >
+              Contatos
+            </BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
       </Box>
-      <Button colorScheme="red" variant="solid" bg="red.400">
+      <Button colorScheme="red" variant="solid" bg={theme.colors.red[100]}>
         Download CV
       </Button>
     </HStack>
