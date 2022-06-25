@@ -7,6 +7,7 @@ import {
   BreadcrumbLink,
   Button,
   HStack,
+  Link,
 } from "@chakra-ui/react";
 import { theme } from "../../styles/theme";
 
@@ -72,9 +73,11 @@ export const Header = () => {
           </BreadcrumbItem>
         </Breadcrumb>
       </Box>
-      <Button colorScheme="red" variant="solid" bg={theme.colors.red[100]}>
-        Download CV
-      </Button>
+      <Link download="https://www.canva.com/design/DAFBQXsK2oc/vNRRpzTHKOhIL32dw1Gkyg/edit">
+        <Button colorScheme="red" variant="solid" bg={theme.colors.red[100]}>
+          Download CV
+        </Button>
+      </Link>
     </HStack>
   );
 };
