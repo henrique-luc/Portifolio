@@ -28,7 +28,7 @@ export const Header = () => {
       </Heading>
       <Box>
         <Breadcrumb separator="" fontWeight="700">
-          <BreadcrumbItem isCurrentPage>
+          <BreadcrumbItem>
             <BreadcrumbLink
               href="/"
               _hover={{
@@ -73,7 +73,10 @@ export const Header = () => {
           </BreadcrumbItem>
         </Breadcrumb>
       </Box>
-      <Link download="https://www.canva.com/design/DAFBQXsK2oc/vNRRpzTHKOhIL32dw1Gkyg/edit">
+      <Link
+        href="https://drive.google.com/u/0/uc?id=1DXrGfwzWZ-xi3YMSp-y1e8cG7t1ymyre&export=download"
+        isExternal
+      >
         <Button colorScheme="red" variant="solid" bg={theme.colors.red[100]}>
           Download CV
         </Button>

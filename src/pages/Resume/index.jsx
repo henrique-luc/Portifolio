@@ -1,8 +1,9 @@
 import { Header } from "../../components/Header";
 import { Box, Text, Center, Image, Flex, Button, Link } from "@chakra-ui/react";
 import { theme } from "../../styles/theme";
-import { RecentProjectsCarrousel } from "../../components/RecentProjectsCarrousel";
-import { CardsTech } from "../../components/Card/cardsTech";
+import { RecentProjects } from "../../components/RecentProjects";
+import { CardsHardSkills } from "../../components/Card/cardsHardSkills";
+import { CardsSoftSkills } from "../../components/Card/cardsSoftSkills";
 
 import { FaLinkedinIn, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { AiFillMail } from "react-icons/ai";
@@ -82,7 +83,7 @@ export const Resume = () => {
                 bg="white"
                 mr={3}
               >
-                <FaLinkedinIn />
+                <FaLinkedinIn color="#0e76a8" />
               </Button>
             </Link>
 
@@ -94,12 +95,12 @@ export const Resume = () => {
                 bg="white"
                 mr={3}
               >
-                <FaGithub />
+                <FaGithub color="#171515" />
               </Button>
             </Link>
 
             <Link
-              href="https://www.linkedin.com/in/henrique-silva-front-end/"
+              href="http://api.whatsapp.com/send?1=pt_BR&phone=5534998269012"
               isExternal
             >
               <Button
@@ -109,14 +110,11 @@ export const Resume = () => {
                 bg="white"
                 mr={3}
               >
-                <FaWhatsapp />
+                <FaWhatsapp color="#25D366" />
               </Button>
             </Link>
 
-            <Link
-              href="https://www.linkedin.com/in/henrique-silva-front-end/"
-              isExternal
-            >
+            <Link href="mailto:henrique.luc@outlook.com" isExternal>
               <Button
                 borderRadius="100%"
                 p="27px 20px"
@@ -124,7 +122,7 @@ export const Resume = () => {
                 bg="white"
                 mr={3}
               >
-                <AiFillMail />
+                <AiFillMail color="#2D8CFF" />
               </Button>
             </Link>
           </Box>
@@ -132,16 +130,100 @@ export const Resume = () => {
       </Center>
 
       <Center w="80%" m="65px auto">
-        <Box w="50%">
-          <CardsTech />
+        <Box w="70%">
+          <CardsHardSkills />
         </Box>
-        <Box w="50%">
-          <Text>Linguagens e Ferramentas que possuo conhecimento</Text>
+        <Box
+          w="30%"
+          display="flex"
+          flexDir="column"
+          alignItems="center"
+          m="0 auto"
+        >
+          <Text
+            fontFamily="Anton, sans-serif"
+            fontSize="8rem"
+            w="146px"
+            lineHeight="1"
+            color={theme.colors.blue[900]}
+            letterSpacing="10px"
+          >
+            HARD
+          </Text>
+          <Text
+            fontFamily="Anton, sans-serif"
+            fontSize="3rem"
+            lineHeight="1"
+            space={1}
+            color={theme.colors.red[100]}
+            letterSpacing="3px"
+          >
+            SKILLS
+          </Text>
         </Box>
       </Center>
 
-      <Center>
-        <RecentProjectsCarrousel />
+      <Center
+        w="100%"
+        m="65px auto"
+        p="30px 0"
+        bgGradient="linear(to-r,  #e0c1f5, #e5d1fa,#ebe1fd, #f4f0fe, #ffffff, )"
+      >
+        <Box w="80%" display="flex">
+          <Box
+            w="30%"
+            display="flex"
+            flexDir="column"
+            alignItems="center"
+            m="0 auto"
+          >
+            <Text
+              fontFamily="Anton, sans-serif"
+              fontSize="8rem"
+              w="142px"
+              lineHeight="1"
+              color={theme.colors.blue[900]}
+              letterSpacing="10px"
+            >
+              SOFT
+            </Text>
+            <Text
+              fontFamily="Anton, sans-serif"
+              fontSize="3rem"
+              lineHeight="1"
+              space={1}
+              color={theme.colors.red[100]}
+              letterSpacing="2px"
+            >
+              SKILLS
+            </Text>
+          </Box>
+          <Box w="70%">
+            <CardsSoftSkills />
+          </Box>
+        </Box>
+      </Center>
+
+      <Center flexDir="column" pb="100px">
+        <Text
+          color={theme.colors.blue[900]}
+          mb={5}
+          fontWeight="700"
+          fontSize="4xl"
+        >
+          Projetos Recentes
+        </Text>
+        <RecentProjects />
+        <Link href="/projetos">
+          <Button
+            mt={5}
+            colorScheme="red"
+            variant="solid"
+            bg={theme.colors.red[100]}
+          >
+            Mais Projetos
+          </Button>
+        </Link>
       </Center>
     </Box>
   );

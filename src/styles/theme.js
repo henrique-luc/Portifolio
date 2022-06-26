@@ -11,6 +11,11 @@ export const theme = extendTheme({
       50: "#FA738B",
       100: "#F7114E",
     },
+
+    lilac: {
+      100: "#e0c1f5",
+    },
+
     fonts: {
       heading: "Inter",
       body: "Inter",
