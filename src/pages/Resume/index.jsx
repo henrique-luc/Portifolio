@@ -129,17 +129,11 @@ export const Resume = () => {
         </Box>
       </Center>
 
-      <Center w="80%" m="65px auto">
+      <Center w="80%" m="65px auto" justifyContent="space-between">
         <Box w="70%">
           <CardsHardSkills />
         </Box>
-        <Box
-          w="30%"
-          display="flex"
-          flexDir="column"
-          alignItems="center"
-          m="0 auto"
-        >
+        <Box display="flex" flexDir="column">
           <Text
             fontFamily="Anton, sans-serif"
             fontSize="8rem"
@@ -169,14 +163,8 @@ export const Resume = () => {
         p="30px 0"
         bgGradient="linear(to-r,  #e0c1f5, #e5d1fa,#ebe1fd, #f4f0fe, #ffffff, )"
       >
-        <Box w="80%" display="flex">
-          <Box
-            w="30%"
-            display="flex"
-            flexDir="column"
-            alignItems="center"
-            m="0 auto"
-          >
+        <Box w="80%" display="flex" justifyContent="space-between">
+          <Box w="30%" display="flex" flexDir="column">
             <Text
               fontFamily="Anton, sans-serif"
               fontSize="8rem"

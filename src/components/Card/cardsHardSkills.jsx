@@ -43,7 +43,7 @@ export const CardsHardSkills = () => {
                 bg: "#FAD2E3",
               }}
             >
-              <FaGitAlt color="#F7114E" size="30px" />
+              <FaGitAlt color="#fc6dab" size="30px" />
               <Box flex="1" textAlign="center" fontWeight="700">
                 Git
               </Box>
@@ -81,7 +81,7 @@ export const CardsHardSkills = () => {
                 bg: "#FAD2E3",
               }}
             >
-              <FaHtml5 color="#F7114E" size="30px" />
+              <FaHtml5 color="#fc6dab" size="30px" />
               <Box flex="1" textAlign="center" fontWeight="700">
                 HTML5
               </Box>
@@ -108,7 +108,7 @@ export const CardsHardSkills = () => {
                 bg: "#FAD2E3",
               }}
             >
-              <FaCss3Alt color="#F7114E" size="30px" />
+              <FaCss3Alt color="#fc6dab" size="30px" />
               <Box flex="1" textAlign="center" fontWeight="700">
                 CSS3
               </Box>
@@ -135,7 +135,7 @@ export const CardsHardSkills = () => {
                 bg: "#FAD2E3",
               }}
             >
-              <SiJavascript color="#F7114E" size="25px" />
+              <SiJavascript color="#fc6dab" size="25px" />
               <Box flex="1" textAlign="center" fontWeight="700">
                 JavaScript
               </Box>
@@ -162,7 +162,7 @@ export const CardsHardSkills = () => {
                 bg: "#FAD2E3",
               }}
             >
-              <FaReact color="#F7114E" size="30px" />
+              <FaReact color="#fc6dab" size="30px" />
               <Box flex="1" textAlign="center" fontWeight="700">
                 React JS
               </Box>
@@ -212,7 +212,7 @@ export const CardsHardSkills = () => {
                 bg: "#FAD2E3",
               }}
             >
-              <SiTypescript color="#F7114E" size="25px" />
+              <SiTypescript color="#fc6dab" size="25px" />
               <Box flex="1" textAlign="center" fontWeight="700">
                 TypeScript
               </Box>
@@ -244,7 +244,7 @@ export const CardsHardSkills = () => {
                 bg: "#FAD2E3",
               }}
             >
-              <FaNodeJs color="#F7114E" size="25px" />
+              <FaNodeJs color="#fc6dab" size="25px" />
               <Box flex="1" textAlign="center" fontWeight="700">
                 Node.js
               </Box>
@@ -271,7 +271,7 @@ export const CardsHardSkills = () => {
                 bg: "#FAD2E3",
               }}
             >
-              <FaInfoCircle color="#F7114E" size="25px" />
+              <FaInfoCircle color="#fc6dab" size="25px" />
               <Box flex="1" textAlign="center" fontWeight="700">
                 API Rest
               </Box>
@@ -298,7 +298,7 @@ export const CardsHardSkills = () => {
                 bg: "#FAD2E3",
               }}
             >
-              <FaPencilAlt color="#F7114E" size="25px" />
+              <FaPencilAlt color="#fc6dab" size="25px" />
               <Box flex="1" textAlign="center" fontWeight="700">
                 Metod. Ágeis
               </Box>
@@ -333,7 +333,7 @@ export const CardsHardSkills = () => {
                 bg: "#FAD2E3",
               }}
             >
-              <FaFigma color="#F7114E" size="25px" />
+              <FaFigma color="#fc6dab" size="25px" />
               <Box flex="1" textAlign="center" fontWeight="700">
                 Figma
               </Box>
@@ -360,7 +360,7 @@ export const CardsHardSkills = () => {
                 bg: "#FAD2E3",
               }}
             >
-              <SiAdobe color="#F7114E" size="25px" />
+              <SiAdobe color="#fc6dab" size="25px" />
               <Box flex="1" textAlign="center" fontWeight="700">
                 Adobe CC
               </Box>
@@ -395,7 +395,7 @@ export const CardsHardSkills = () => {
                 bg: "#FAD2E3",
               }}
             >
-              <IoLanguageOutline color="#F7114E" size="25px" />
+              <IoLanguageOutline color="#fc6dab" size="25px" />
               <Box flex="1" textAlign="center" fontWeight="700">
                 Inglês
               </Box>
@@ -408,7 +408,7 @@ export const CardsHardSkills = () => {
                 {" "}
                 Nível de experiência
               </Text>
-              <Progress colorScheme="purple" hasStripe value={90} />
+              <Progress colorScheme="purple" hasStripe value={60} />
             </Box>
           </AccordionPanel>
         </AccordionItem>
