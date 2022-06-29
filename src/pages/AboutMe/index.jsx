@@ -176,6 +176,18 @@ export const AboutMe = () => {
           </Box>
         </Center>
       </Center>
+
+      <Center flexDir="column" pb="100px">
+        <Text
+          color={theme.colors.blue[900]}
+          mb={5}
+          fontWeight="700"
+          fontSize="4xl"
+        >
+          Experiência Profissional
+        </Text>
+        <Box></Box>
+      </Center>
     </Box>
   );
 };
