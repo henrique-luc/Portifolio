@@ -1,4 +1,11 @@
-import { Box, Center, Text, Image } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Text,
+  Image,
+  UnorderedList,
+  ListItem,
+} from "@chakra-ui/react";
 import { Header } from "../../components/Header";
 import { theme } from "../../styles/theme";
 
@@ -177,16 +184,146 @@ export const AboutMe = () => {
         </Center>
       </Center>
 
-      <Center flexDir="column" pb="100px">
+      <Center flexDir="column" pb="100px" w="100%">
         <Text
           color={theme.colors.blue[900]}
-          mb={5}
+          mb={8}
           fontWeight="700"
           fontSize="4xl"
         >
           Experiência Profissional
         </Text>
-        <Box></Box>
+        <Box w="80%">
+          <Center alignItems="flex-start">
+            <Box w="50%"></Box>
+            <Box
+              display="flex"
+              borderLeft="2px"
+              borderColor={theme.colors.red[100]}
+              w="50%"
+            >
+              <Box mr="10px" pl="40px">
+                <Image
+                  boxSize="70px"
+                  objectFit="cover"
+                  src={kenzieAcademyLogo}
+                  alt="Dan Abramov"
+                />
+              </Box>
+
+              <Box>
+                <Text fontWeight="700" fontSize="xl">
+                  Kenzie Academy Brasil
+                </Text>
+                <Text lineHeight="12px" fontStyle="italic">
+                  Peer Coach (Monitoria)
+                </Text>
+                <Text fontSize="sm" mt="7px" color="gray">
+                  fev de 2022 - mai de 2022
+                </Text>
+
+                <UnorderedList
+                  fontSize="sm"
+                  mt="7px"
+                  textAlign="justify"
+                  ml="20px"
+                >
+                  <ListItem>
+                    Ajudar os desenvolvedores que estavam iniciando no módulo;
+                  </ListItem>
+                  <ListItem>Corrigir as atividades propostas;</ListItem>
+                  <ListItem>Aplicar atividades técnicas;</ListItem>
+                </UnorderedList>
+              </Box>
+            </Box>
+          </Center>
+
+          <Center alignItems="flex-start" mt={3}>
+            <Box
+              display="flex"
+              flexDirection="row-reverse"
+              borderRight="2px"
+              borderColor={theme.colors.red[100]}
+              w="50%"
+              ml="5px"
+            >
+              <Box ml="10px" pr="40px">
+                <Image
+                  boxSize="70px"
+                  objectFit="cover"
+                  src={kenzieAcademyLogo}
+                  alt="Dan Abramov"
+                />
+              </Box>
+
+              <Box textAlign="right">
+                <Text fontWeight="700" fontSize="xl">
+                  Autônomo
+                </Text>
+                <Text lineHeight="12px" fontStyle="italic">
+                  Auxiliar de Fotografia
+                </Text>
+                <Text fontSize="sm" mt="7px" color="gray">
+                  nov de 2018 - dez de 2021
+                </Text>
+
+                <UnorderedList
+                  fontSize="sm"
+                  mt="7px"
+                  textAlign="justify"
+                  ml="20px"
+                >
+                  <ListItem>Auxiliar nos equipamentos de luz;</ListItem>
+                  <ListItem>Fotografar eventos;</ListItem>
+                  <ListItem>Edição de fotos e albuns fotográficos;</ListItem>
+                </UnorderedList>
+              </Box>
+            </Box>
+            <Box w="50%"></Box>
+          </Center>
+
+          <Center alignItems="flex-start" mt={3}>
+            <Box w="50%"></Box>
+            <Box
+              display="flex"
+              borderLeft="2px"
+              borderColor={theme.colors.red[100]}
+              w="50%"
+            >
+              <Box mr="10px" pl="40px">
+                <Image
+                  boxSize="70px"
+                  objectFit="cover"
+                  src={kenzieAcademyLogo}
+                  alt="Dan Abramov"
+                />
+              </Box>
+
+              <Box>
+                <Text fontWeight="700" fontSize="xl">
+                  Pernambucanas
+                </Text>
+                <Text lineHeight="12px" fontStyle="italic">
+                  Atendimento ao Cliente
+                </Text>
+                <Text fontSize="sm" mt="7px" color="gray">
+                  fev de 2016 - ago de 2016
+                </Text>
+
+                <UnorderedList
+                  fontSize="sm"
+                  mt="7px"
+                  textAlign="justify"
+                  ml="20px"
+                >
+                  <ListItem>Atendimento ao cliente;</ListItem>
+                  <ListItem>Estoque;</ListItem>
+                  <ListItem>Caixa;</ListItem>
+                </UnorderedList>
+              </Box>
+            </Box>
+          </Center>
+        </Box>
       </Center>
     </Box>
   );
