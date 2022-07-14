@@ -11,6 +11,8 @@ import { theme } from "../../styles/theme";
 
 import kenzieAcademyLogo from "../../assets/kenzieAcademyLogo.png";
 import CruzeiroDoSulLogo from "../../assets/CruzeiroDoSulLogo.png";
+import CameraIcon from "../../assets/CameraIcon.png";
+import Pernambucanas from "../../assets/Pernambucanas.png";
 
 export const AboutMe = () => {
   return (
@@ -251,7 +253,7 @@ export const AboutMe = () => {
                 <Image
                   boxSize="70px"
                   objectFit="cover"
-                  src={kenzieAcademyLogo}
+                  src={CameraIcon}
                   alt="Dan Abramov"
                 />
               </Box>
@@ -294,7 +296,7 @@ export const AboutMe = () => {
                 <Image
                   boxSize="70px"
                   objectFit="cover"
-                  src={kenzieAcademyLogo}
+                  src={Pernambucanas}
                   alt="Dan Abramov"
                 />
               </Box>
