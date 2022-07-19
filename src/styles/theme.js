@@ -20,6 +20,7 @@ export const theme = extendTheme({
       heading: "Inter",
       body: "Inter",
     },
+
     fontSizes: {
       xs: "0.75rem",
       sm: "0.875rem",
@@ -35,6 +36,7 @@ export const theme = extendTheme({
       "8xl": "6rem",
       "9xl": "8rem",
     },
+
     styles: {
       global: {
         body: {
@@ -42,6 +44,10 @@ export const theme = extendTheme({
           color: "gray.900",
         },
       },
+    },
+
+    breakpoints: {
+      md: "768px",
     },
   },
 });

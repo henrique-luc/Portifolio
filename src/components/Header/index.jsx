@@ -8,8 +8,14 @@ import {
   Button,
   HStack,
   Link,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  IconButton,
 } from "@chakra-ui/react";
 import { theme } from "../../styles/theme";
+import { HamburgerIcon } from "@chakra-ui/icons";
 
 export const Header = () => {
   return (
@@ -20,67 +26,153 @@ export const Header = () => {
       justifyContent="space-around"
       borderRadius={10}
       p="15px 0"
-      w="80%"
+      w={{ base: "90%", md: "80%" }}
       flexWrap="wrap"
     >
       <Heading fontSize="xl" color={theme.colors.blue[900]}>
         &lt;Portifólio/&gt;
       </Heading>
+
       <Box>
-        <Breadcrumb separator="" fontWeight="700">
-          <BreadcrumbItem>
-            <BreadcrumbLink
-              href="/"
-              _hover={{
-                color: theme.colors.red[100],
-              }}
-            >
-              Home
-            </BreadcrumbLink>
-          </BreadcrumbItem>
+        <Box display={{ base: "flex", md: "none" }}>
+          <Menu>
+            <MenuButton
+              as={IconButton}
+              aria-label="Options"
+              icon={<HamburgerIcon />}
+              variant="outline"
+            />
+            <MenuList>
+              <MenuItem>
+                <Link
+                  fontWeight="700"
+                  href="/"
+                  _hover={{
+                    color: theme.colors.red[100],
+                  }}
+                >
+                  Home
+                </Link>
+              </MenuItem>
 
-          <BreadcrumbItem>
-            <BreadcrumbLink
-              href="/sobre-mim"
-              _hover={{
-                color: theme.colors.red[100],
-              }}
-            >
-              Sobre Mim
-            </BreadcrumbLink>
-          </BreadcrumbItem>
+              <MenuItem>
+                <Link
+                  fontWeight="700"
+                  href="/sobre-mim"
+                  _hover={{
+                    color: theme.colors.red[100],
+                  }}
+                >
+                  Sobre Mim
+                </Link>
+              </MenuItem>
 
-          <BreadcrumbItem>
-            <BreadcrumbLink
-              href="/projetos"
-              _hover={{
-                color: theme.colors.red[100],
-              }}
-            >
-              Projetos
-            </BreadcrumbLink>
-          </BreadcrumbItem>
+              <MenuItem>
+                <Link
+                  fontWeight="700"
+                  href="/projetos"
+                  _hover={{
+                    color: theme.colors.red[100],
+                  }}
+                >
+                  Projetos
+                </Link>
+              </MenuItem>
 
-          <BreadcrumbItem>
-            <BreadcrumbLink
-              href="/contatos"
-              _hover={{
-                color: theme.colors.red[100],
-              }}
-            >
-              Contatos
-            </BreadcrumbLink>
-          </BreadcrumbItem>
-        </Breadcrumb>
+              <MenuItem>
+                <Link
+                  fontWeight="700"
+                  href="/contatos"
+                  _hover={{
+                    color: theme.colors.red[100],
+                  }}
+                >
+                  Contatos
+                </Link>
+              </MenuItem>
+
+              <MenuItem
+                display="flex"
+                justifyContent="center"
+                mt="30px"
+                _hover={{ bg: "transparent" }}
+              >
+                <Link
+                  href="https://drive.google.com/u/0/uc?id=10m_2h0PHxWUb68wQlO7N9KT5csz4K77-&export=download"
+                  isExternal
+                >
+                  <Button
+                    colorScheme="red"
+                    variant="solid"
+                    bg={theme.colors.red[100]}
+                  >
+                    Download CV
+                  </Button>
+                </Link>
+              </MenuItem>
+            </MenuList>
+          </Menu>
+        </Box>
+
+        <Box display={{ base: "none", md: "flex" }}>
+          <Breadcrumb separator="" fontWeight="700">
+            <BreadcrumbItem>
+              <BreadcrumbLink
+                href="/"
+                _hover={{
+                  color: theme.colors.red[100],
+                }}
+              >
+                Home
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+
+            <BreadcrumbItem>
+              <BreadcrumbLink
+                href="/sobre-mim"
+                _hover={{
+                  color: theme.colors.red[100],
+                }}
+              >
+                Sobre Mim
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+
+            <BreadcrumbItem>
+              <BreadcrumbLink
+                href="/projetos"
+                _hover={{
+                  color: theme.colors.red[100],
+                }}
+              >
+                Projetos
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+
+            <BreadcrumbItem>
+              <BreadcrumbLink
+                href="/contatos"
+                _hover={{
+                  color: theme.colors.red[100],
+                }}
+              >
+                Contatos
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+          </Breadcrumb>
+        </Box>
       </Box>
-      <Link
-        href="https://drive.google.com/u/0/uc?id=10m_2h0PHxWUb68wQlO7N9KT5csz4K77-&export=download"
-        isExternal
-      >
-        <Button colorScheme="red" variant="solid" bg={theme.colors.red[100]}>
-          Download CV
-        </Button>
-      </Link>
+
+      <Box display={{ base: "none", md: "flex" }}>
+        <Link
+          href="https://drive.google.com/u/0/uc?id=10m_2h0PHxWUb68wQlO7N9KT5csz4K77-&export=download"
+          isExternal
+        >
+          <Button colorScheme="red" variant="solid" bg={theme.colors.red[100]}>
+            Download CV
+          </Button>
+        </Link>
+      </Box>
     </HStack>
   );
 };

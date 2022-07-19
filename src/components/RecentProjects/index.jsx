@@ -5,13 +5,13 @@ import NuKenzie from "../../assets/NuKenzie.png";
 
 export const RecentProjects = () => {
   return (
-    <Center w="80%" justifyContent="space-around">
+    <Center w="90%" justifyContent="space-around">
       <Link
         href="https://react-entrega-s1-nu-kenzie-henrique-luc.vercel.app/"
         isExternal
       >
         <Image
-          w="350px"
+          w={{ base: "350px", md: "320px" }}
           h="290px"
           objectFit="cover"
           src={NuKenzie}

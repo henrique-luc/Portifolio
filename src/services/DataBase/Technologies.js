@@ -6,8 +6,10 @@ import {
   FaGitAlt,
   FaFigma,
   FaPencilAlt,
+  FaInfoCircle,
 } from "react-icons/fa";
 import { SiJavascript, SiAdobe, SiTypescript } from "react-icons/si";
+import { IoLanguageOutline } from "react-icons/io5";
 
 export const Technologies = [
   {
@@ -56,8 +58,8 @@ export const Technologies = [
   {
     icon: SiTypescript,
     name: "TypeScript",
-    experience: 80,
-    libs: [""],
+    experience: 70,
+    libs: ["React TypeScript"],
   },
 
   {
@@ -68,17 +70,10 @@ export const Technologies = [
   },
 
   {
-    icon: "",
-    name: "Integração API Rest",
+    icon: FaInfoCircle,
+    name: "API",
     experience: 100,
-    libs: [""],
-  },
-
-  {
-    icon: "",
-    name: "Medologias ágeis",
-    experience: 100,
-    libs: ["Kanban, Scrum"],
+    libs: ["API Rest"],
   },
 
   {
@@ -89,16 +84,23 @@ export const Technologies = [
   },
 
   {
-    icon: SiAdobe,
-    name: "Adobe Creative Cloud",
-    experience: 100,
-    libs: ["Lightroom", "Photoshop"],
-  },
-
-  {
-    icon: "",
+    icon: IoLanguageOutline,
     name: "Inglês",
     experience: 60,
     libs: [""],
+  },
+
+  {
+    icon: FaPencilAlt,
+    name: "Metod. ágeis",
+    experience: 100,
+    libs: ["Kanban", "Scrum"],
+  },
+
+  {
+    icon: SiAdobe,
+    name: "Adobe CC",
+    experience: 100,
+    libs: ["Lightroom", "Photoshop"],
   },
 ];
