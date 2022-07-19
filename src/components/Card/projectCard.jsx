@@ -21,39 +21,52 @@ export const ProjectCard = ({ project }) => {
     project;
 
   return (
-    <Accordion allowMultiple w="100%" mb={5}>
-      <AccordionItem bg="white" w="100%" borderRadius="10px" m="0 10px 10px 0">
+    <>
+      <AccordionItem bg="white" w="100%" borderRadius="10px" m="0 10px 30px 0">
         <h2>
           <AccordionButton
+            flexDir={{ base: "column", md: "row" }}
             justifyContent="space-between"
             bgGradient="linear(to-r, #ffffff, #f4f0fe, #ebe1fd, #e5d1fa, #e0c1f5)"
             borderRadius="10px"
+            height={{ base: "fit-content", md: "250px" }}
             _hover={{
               borderRadius: "10px",
             }}
           >
             <Image
-              w="350px"
-              h="290px"
+              w={{ base: "100%", md: "350px" }}
+              h="190px"
               objectFit="cover"
               src={image}
               alt={title}
               borderRadius="10px"
             />
-            <Box textAlign="start" w="50%" fontWeight="700">
+            <Box
+              textAlign="start"
+              w={{ base: "90%", md: "50%" }}
+              fontWeight="700"
+            >
               <Text fontWeight="700" fontSize="3xl">
                 {title}
               </Text>
               <Text fontSize="sm" mt="7px" textAlign="justify">
                 {description}
               </Text>
-              <Box display="flex" justifyContent="space-around" mt={9}>
+
+              <Box
+                display="flex"
+                justifyContent="space-around"
+                mt={{ base: "15px", md: "30px" }}
+                mb={{ base: "15px", md: "0" }}
+              >
                 <Link href={vercel} isExternal>
                   <Button
                     colorScheme="red"
                     variant="solid"
                     bg={theme.colors.red[100]}
                     rightIcon={<SmallAddIcon />}
+                    fontSize={{ base: "xs", md: "md" }}
                   >
                     Abrir Aplicação
                   </Button>
@@ -64,8 +77,9 @@ export const ProjectCard = ({ project }) => {
                     variant="solid"
                     bg={theme.colors.red[100]}
                     rightIcon={<SmallAddIcon />}
+                    fontSize={{ base: "xs", md: "md" }}
                   >
-                    Repositório GitHub
+                    Repo. GitHub
                   </Button>
                 </Link>
               </Box>
@@ -101,6 +115,6 @@ export const ProjectCard = ({ project }) => {
           </Box>
         </AccordionPanel>
       </AccordionItem>
-    </Accordion>
+    </>
   );
 };

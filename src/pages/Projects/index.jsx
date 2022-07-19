@@ -22,7 +22,14 @@ export const ProjectsPage = () => {
       </Center>
 
       <Center w="100%" mt={9}>
-        <Accordion allowMultiple w="80%">
+        <Accordion
+          allowMultiple
+          w={{ base: "90%", md: "80%" }}
+          display="flex"
+          flexDir="column"
+          justifyContent="center"
+          m="0 auto"
+        >
           {allProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

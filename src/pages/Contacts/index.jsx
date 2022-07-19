@@ -20,7 +20,7 @@ export const Contacts = () => {
         bgGradient="linear(to-l, #ffffff, #f4f0fe, #ebe1fd, #e5d1fa, #e0c1f5)"
         h="fit-content"
       >
-        <Box w="80%" mt={5} mb={5}>
+        <Box w={{ base: "90%", md: "80%" }} mt={5} mb={5}>
           <Box display="flex" flexDir="column">
             <Box display="flex" alignItems="center">
               <Link

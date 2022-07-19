@@ -260,7 +260,7 @@ export const Resume = () => {
         >
           Projetos Recentes
         </Text>
-        <Box display={{ base: "flex", md: "none" }} w="90%">
+        <Box display={{ base: "flex", md: "none" }} w="100%">
           <CarouselProjects />
         </Box>
 

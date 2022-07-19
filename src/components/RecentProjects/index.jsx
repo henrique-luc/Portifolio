@@ -11,7 +11,7 @@ export const RecentProjects = () => {
         isExternal
       >
         <Image
-          w={{ base: "350px", md: "320px" }}
+          w={{ base: "350px", md: "95%" }}
           h="290px"
           objectFit="cover"
           src={NuKenzie}
@@ -21,7 +21,7 @@ export const RecentProjects = () => {
 
       <Link href="https://capstone-buy-an-idea.vercel.app/" isExternal>
         <Image
-          w="350px"
+          w={{ base: "350px", md: "95%" }}
           h="290px"
           objectFit="cover"
           src={Buy}
@@ -34,7 +34,7 @@ export const RecentProjects = () => {
         isExternal
       >
         <Image
-          w="350px"
+          w={{ base: "350px", md: "95%" }}
           h="290px"
           objectFit="cover"
           src={KenzieHub}

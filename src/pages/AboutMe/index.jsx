@@ -5,6 +5,11 @@ import {
   Image,
   UnorderedList,
   ListItem,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
 } from "@chakra-ui/react";
 import { Header } from "../../components/Header";
 import { theme } from "../../styles/theme";
@@ -25,20 +30,24 @@ export const AboutMe = () => {
         pb={5}
       >
         <Header />
-        <Box w="80%" mt={5}>
-          <Box display="flex">
+        <Box w={{ base: "90%", md: "80%" }} mt={5}>
+          <Box
+            display="flex"
+            flexDir={{ base: "column", md: "row" }}
+            textAlign={{ base: "center", md: "left" }}
+          >
             <Image
               borderRadius="50px 50px 0 0"
               boxSize="300px"
               src="Henrique.jpg"
               alt="Henrique Silva"
-              mr={5}
+              m={{ base: "30px auto 0", md: "0 30px 0 0" }}
             />
             <Box>
               <Text
                 fontWeight="700"
                 fontSize="4xl"
-                w="60%"
+                w={{ base: "100%", md: "60%" }}
                 mt="7%"
                 color={theme.colors.blue[900]}
               >
@@ -57,8 +66,13 @@ export const AboutMe = () => {
         </Box>
       </Center>
 
-      <Center w="80%" m="65px auto" justifyContent="space-between">
-        <Box textAlign="justify" w="60%">
+      <Center
+        w={{ base: "90%", md: "80%" }}
+        m={{ base: "40px auto", md: "65px auto" }}
+        justifyContent="space-between"
+        flexDir={{ base: "column-reverse", md: "row" }}
+      >
+        <Box textAlign="justify" w={{ base: "90%", md: "60%" }}>
           <Text mb="20px">
             Meu nome é Henrique, tenho 24 anos, sou uma pessoa LGBTQIA+ e moro
             na cidade de Araxá-MG. No meu tempo livre gosto de desenhar, ler,
@@ -83,7 +97,7 @@ export const AboutMe = () => {
             tecnologias e ferramentas para aprimorar meu conhecimento.
           </Text>
         </Box>
-        <Box>
+        <Box mb={{ base: "20px", md: "0" }}>
           <Text
             fontFamily="Anton, sans-serif"
             fontSize="7xl"
@@ -112,8 +126,12 @@ export const AboutMe = () => {
         p="30px 0"
         bgGradient="linear(to-r, #ffffff, #f4f0fe, #ebe1fd, #e5d1fa, #e0c1f5)"
       >
-        <Center w="80%" justifyContent="space-between">
-          <Box>
+        <Center
+          w={{ base: "90%", md: "80%" }}
+          justifyContent="space-between"
+          flexDir={{ base: "column", md: "row" }}
+        >
+          <Box mb={{ base: "40px", md: "0" }}>
             <Text
               fontFamily="Anton, sans-serif"
               fontSize="5xl"
@@ -142,7 +160,7 @@ export const AboutMe = () => {
                   alt="Dan Abramov"
                 />
               </Box>
-              <Box w="50%">
+              <Box w={{ base: "70%", md: "50%" }}>
                 <Text fontWeight="700" fontSize="xl">
                   Kenzie Academy Brasil
                 </Text>
@@ -170,7 +188,7 @@ export const AboutMe = () => {
                   alt="Dan Abramov"
                 />
               </Box>
-              <Box w="50%">
+              <Box w={{ base: "70%", md: "50%" }}>
                 <Text fontWeight="700" fontSize="xl">
                   Cruzeiro do Sul Virtual
                 </Text>
@@ -192,10 +210,15 @@ export const AboutMe = () => {
           mb={8}
           fontWeight="700"
           fontSize="4xl"
+          textAlign="center"
         >
           Experiência Profissional
         </Text>
-        <Box w="80%">
+        <Box
+          w={{ base: "90%", md: "80%" }}
+          display={{ base: "none", md: "flex" }}
+          flexDir="column"
+        >
           <Center alignItems="flex-start">
             <Box w="50%"></Box>
             <Box
@@ -231,7 +254,7 @@ export const AboutMe = () => {
                   ml="20px"
                 >
                   <ListItem>
-                    Ajudar os desenvolvedores que estavam iniciando no módulo;
+                    Ajudar os desenvolvedores que estão iniciando no módulo;
                   </ListItem>
                   <ListItem>Corrigir as atividades propostas;</ListItem>
                   <ListItem>Aplicar atividades técnicas;</ListItem>
@@ -254,7 +277,7 @@ export const AboutMe = () => {
                   boxSize="70px"
                   objectFit="cover"
                   src={CameraIcon}
-                  alt="Dan Abramov"
+                  alt="CameraIcon"
                 />
               </Box>
 
@@ -325,6 +348,174 @@ export const AboutMe = () => {
               </Box>
             </Box>
           </Center>
+        </Box>
+
+        <Box display={{ base: "flex", md: "none" }} flexDir="column" w="100%">
+          <Accordion allowMultiple w="90%" mb={5} m="0 auto">
+            <AccordionItem
+              bg="white"
+              w="100%"
+              borderRadius="10px"
+              mb="10px"
+              boxShadow="lg"
+            >
+              <h2>
+                <AccordionButton
+                  justifyContent="space-between"
+                  borderRadius="10px"
+                  _hover={{
+                    borderRadius: "10px",
+                  }}
+                >
+                  <Box>
+                    <Image
+                      w="60px"
+                      h="60px"
+                      objectFit="cover"
+                      src={kenzieAcademyLogo}
+                      alt="CameraIcon"
+                      borderRadius="10px"
+                    />
+                  </Box>
+
+                  <Box textAlign="left">
+                    <Text fontWeight="700" fontSize="lg">
+                      Kenzie Academy Brasil
+                    </Text>
+                    <Text lineHeight="12px" fontStyle="italic">
+                      Peer Coach (Monitoria)
+                    </Text>
+                    <Text fontSize="sm" mt="7px" color="gray">
+                      fev de 2022 - mai de 2022
+                    </Text>
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel>
+                <UnorderedList
+                  fontSize="sm"
+                  mt="7px"
+                  textAlign="justify"
+                  ml="20px"
+                >
+                  <ListItem>
+                    Ajudar os desenvolvedores que estão iniciando no módulo;
+                  </ListItem>
+                  <ListItem>Corrigir as atividades propostas;</ListItem>
+                  <ListItem>Aplicar atividades técnicas;</ListItem>
+                </UnorderedList>
+              </AccordionPanel>
+            </AccordionItem>
+
+            <AccordionItem
+              bg="white"
+              w="100%"
+              borderRadius="10px"
+              mb="10px"
+              boxShadow="lg"
+            >
+              <h2>
+                <AccordionButton
+                  justifyContent="space-between"
+                  borderRadius="10px"
+                  _hover={{
+                    borderRadius: "10px",
+                  }}
+                >
+                  <Box>
+                    <Image
+                      w="60px"
+                      h="60px"
+                      objectFit="cover"
+                      src={CameraIcon}
+                      alt="CameraIcon"
+                      borderRadius="10px"
+                    />
+                  </Box>
+
+                  <Box textAlign="left">
+                    <Text fontWeight="700" fontSize="lg">
+                      Autônomo
+                    </Text>
+                    <Text lineHeight="12px" fontStyle="italic">
+                      Auxiliar de Fotografia
+                    </Text>
+                    <Text fontSize="sm" mt="7px" color="gray">
+                      nov de 2018 - dez de 2021
+                    </Text>
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel>
+                <UnorderedList
+                  fontSize="sm"
+                  mt="7px"
+                  textAlign="justify"
+                  ml="20px"
+                >
+                  <ListItem>Auxiliar nos equipamentos de luz;</ListItem>
+                  <ListItem>Fotografar eventos;</ListItem>
+                  <ListItem>Edição de fotos e albuns fotográficos;</ListItem>
+                </UnorderedList>
+              </AccordionPanel>
+            </AccordionItem>
+
+            <AccordionItem
+              bg="white"
+              w="100%"
+              borderRadius="10px"
+              mb="10px"
+              boxShadow="lg"
+            >
+              <h2>
+                <AccordionButton
+                  justifyContent="space-between"
+                  borderRadius="10px"
+                  _hover={{
+                    borderRadius: "10px",
+                  }}
+                >
+                  <Box>
+                    <Image
+                      w="60px"
+                      h="60px"
+                      objectFit="cover"
+                      src={Pernambucanas}
+                      alt="Pernambucanas"
+                      borderRadius="10px"
+                    />
+                  </Box>
+
+                  <Box textAlign="left">
+                    <Text fontWeight="700" fontSize="lg">
+                      Pernambucanas
+                    </Text>
+                    <Text lineHeight="12px" fontStyle="italic">
+                      Atendimento ao Cliente
+                    </Text>
+                    <Text fontSize="sm" mt="7px" color="gray">
+                      fev de 2016 - ago de 2016
+                    </Text>
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel>
+                <UnorderedList
+                  fontSize="sm"
+                  mt="7px"
+                  textAlign="justify"
+                  ml="20px"
+                >
+                  <ListItem>Atendimento ao cliente;</ListItem>
+                  <ListItem>Estoque;</ListItem>
+                  <ListItem>Caixa;</ListItem>
+                </UnorderedList>
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
         </Box>
       </Center>
     </Box>
