@@ -36,22 +36,12 @@ export const CardsHardSkills = ({ icon: Icon, techs }) => {
           </AccordionButton>
         </h2>
         <AccordionPanel>
-          <Box>
-            <Text mb={1} fontSize="sm">
-              Nível de experiência
-            </Text>
-            <Progress colorScheme="purple" hasStripe value={experience} />
-          </Box>
           <Box mt={3}>
-            {libs.map((lib, index) =>
-              libs > 0 ? (
-                <Tag colorScheme="purple" m="0 10px 10px 0" key={index}>
-                  {lib}
-                </Tag>
-              ) : (
-                ""
-              )
-            )}
+            {libs.map((lib, index) => (
+              <Tag colorScheme="purple" m="0 10px 10px 0" key={index}>
+                {lib}
+              </Tag>
+            ))}
           </Box>
         </AccordionPanel>
       </AccordionItem>

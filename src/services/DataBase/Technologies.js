@@ -23,21 +23,21 @@ export const Technologies = [
     icon: FaHtml5,
     name: "HTML5",
     experience: 100,
-    libs: [""],
+    libs: [],
   },
 
   {
     icon: FaCss3Alt,
     name: "CSS3",
     experience: 100,
-    libs: [""],
+    libs: [],
   },
 
   {
     icon: SiJavascript,
     name: "JavaScript",
     experience: 100,
-    libs: [""],
+    libs: ["Poo"],
   },
 
   {
@@ -48,10 +48,10 @@ export const Technologies = [
       "Context API",
       "Redux",
       "Axios",
-      "Styled Components",
       "Chakra",
       "Formik",
       "Toastify",
+      "Styled Components",
     ],
   },
 
@@ -62,12 +62,12 @@ export const Technologies = [
     libs: ["React TypeScript"],
   },
 
-  {
-    icon: FaNodeJs,
-    name: "Node.js",
-    experience: 10,
-    libs: [""],
-  },
+  // {
+  //   icon: FaNodeJs,
+  //   name: "Node.js",
+  //   experience: 10,
+  //   libs: [],
+  // },
 
   {
     icon: FaInfoCircle,
@@ -80,14 +80,14 @@ export const Technologies = [
     icon: FaFigma,
     name: "Figma",
     experience: 90,
-    libs: [""],
+    libs: ["Construção de projetos seguindo Figma"],
   },
 
   {
     icon: IoLanguageOutline,
-    name: "Inglês",
+    name: "Idiomas",
     experience: 60,
-    libs: [""],
+    libs: ["Inglês Intermediário"],
   },
 
   {

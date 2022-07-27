@@ -76,8 +76,9 @@ export const Resume = () => {
           </Box>
           <Image
             borderRadius="50px 50px 0 0"
+            objectFit="cover"
             boxSize="300px"
-            src="Henrique.jpg"
+            src="Henrique2.jpg"
             alt="Henrique Silva"
             m={{ base: "30px auto 0", md: "0" }}
           />
