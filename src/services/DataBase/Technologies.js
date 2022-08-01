@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import { SiJavascript, SiAdobe, SiTypescript } from "react-icons/si";
 import { IoLanguageOutline } from "react-icons/io5";
+import { TbBrandNextjs } from "react-icons/tb";
 
 export const Technologies = [
   {
@@ -30,7 +31,7 @@ export const Technologies = [
     icon: FaCss3Alt,
     name: "CSS3",
     experience: 100,
-    libs: [],
+    libs: ["Responsividade", "Mobile First"],
   },
 
   {
@@ -60,6 +61,13 @@ export const Technologies = [
     name: "TypeScript",
     experience: 70,
     libs: ["React TypeScript"],
+  },
+
+  {
+    icon: TbBrandNextjs,
+    name: "Next Js",
+    experience: 100,
+    libs: [],
   },
 
   // {
