@@ -29,7 +29,7 @@ export const ProjectCard = ({ project }) => {
             justifyContent="space-between"
             bgGradient="linear(to-r, #ffffff, #f4f0fe, #ebe1fd, #e5d1fa, #e0c1f5)"
             borderRadius="10px"
-            height={{ base: "fit-content", md: "250px" }}
+            height={{ base: "fit-content", md: "350px" }}
             _hover={{
               borderRadius: "10px",
             }}
