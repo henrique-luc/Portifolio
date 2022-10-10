@@ -1,21 +1,18 @@
 import { Center, Link, Image } from "@chakra-ui/react";
 import Buy from "../../assets/Buy.png";
-import KenzieHub from "../../assets/KenzieHub.png";
-import NuKenzie from "../../assets/NuKenzie.png";
+import Socializing from "../../assets/Socializing.png";
+import Movies from "../../assets/Movies.png";
 
 export const RecentProjects = () => {
   return (
     <Center w="90%" justifyContent="space-around">
-      <Link
-        href="https://react-entrega-s1-nu-kenzie-henrique-luc.vercel.app/"
-        isExternal
-      >
+      <Link href="https://movies-search-one.vercel.app/" isExternal>
         <Image
           w={{ base: "350px", md: "95%" }}
           h="290px"
           objectFit="cover"
-          src={NuKenzie}
-          alt="NuKenzie"
+          src={Movies}
+          alt="Movies"
         />
       </Link>
 
@@ -29,16 +26,13 @@ export const RecentProjects = () => {
         />
       </Link>
 
-      <Link
-        href="https://react-entrega-s2-kenzie-hub-henrique-luc.vercel.app/"
-        isExternal
-      >
+      <Link href="https://socializing.vercel.app/" isExternal>
         <Image
           w={{ base: "350px", md: "95%" }}
           h="290px"
           objectFit="cover"
-          src={KenzieHub}
-          alt="KenzieHub"
+          src={Socializing}
+          alt="Socializing"
         />
       </Link>
     </Center>

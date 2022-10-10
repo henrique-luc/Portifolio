@@ -1,10 +1,44 @@
 import Buy from "../../assets/Buy.png";
 import KenzieHub from "../../assets/KenzieHub.png";
 import NuKenzie from "../../assets/NuKenzie.png";
+import Movies from "../../assets/Movies.png";
+import Socializing2 from "../../assets/Socializing2.png";
 
 export const Projects = [
   {
-    id: 1,
+    id: 2,
+    image: Socializing2,
+    title: "Socializing",
+    description:
+      "Aplicação desenvolvida como uma Rede Social, utilizando o framework React Js no front end. O usuário cadastra seu username e pode ver outras publicações, alem de fazer suas próprias. Há tambem a possibilidade de excluir e editar publicações.",
+    vercel: "https://socializing.vercel.app/",
+    github: "https://github.com/henrique-luc/Socializing",
+    UsedProg: ["React JS", "VSCode", "Git", "GitHub", "Vercel"],
+    UsedLibs: [
+      "React Router Dom@5",
+      "Chakra",
+      "Moment",
+      "React Hook Form",
+      "Redux",
+      "UUID",
+      "Yup",
+    ],
+  },
+
+  {
+    id: 3,
+    image: Movies,
+    title: "Movies Search",
+    description:
+      "Aplicação desenvolvida para busca de filmes e séries, utilizando o framework React Js no front end. Quando clicado em um filme/série pesquisado ele traz informações mais detalhadas.",
+    vercel: "https://movies-search-one.vercel.app/",
+    github: "https://github.com/henrique-luc/movies-search",
+    UsedProg: ["React JS", "VSCode", "Git", "GitHub", "Vercel"],
+    UsedLibs: ["React Router Dom@5", "Axios", "Chakra"],
+  },
+
+  {
+    id: 4,
     image: Buy,
     title: "Buy An Idea",
     description:
@@ -35,7 +69,7 @@ export const Projects = [
     ],
   },
   {
-    id: 2,
+    id: 5,
     image: NuKenzie,
     title: "NuKenzie",
     description:
@@ -46,7 +80,7 @@ export const Projects = [
     UsedLibs: ["React Router Dom@5", "Styled-Components"],
   },
   {
-    id: 3,
+    id: 6,
     image: KenzieHub,
     title: "KenzieHub",
     description:

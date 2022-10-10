@@ -14,8 +14,6 @@ import {
 import { SmallAddIcon } from "@chakra-ui/icons";
 import { theme } from "../../styles/theme";
 
-import Buy from "../../assets/Buy.png";
-
 export const ProjectCard = ({ project }) => {
   const { image, title, description, vercel, github, UsedProg, UsedLibs } =
     project;

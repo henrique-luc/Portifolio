@@ -88,7 +88,10 @@ export const Technologies = [
     icon: FaFigma,
     name: "Figma",
     experience: 90,
-    libs: ["Construção de projetos seguindo Figma"],
+    libs: [
+      "Construção de projetos",
+      "Construção de aplicações orientados pelo Figma",
+    ],
   },
 
   {

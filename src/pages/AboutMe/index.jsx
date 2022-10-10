@@ -18,6 +18,7 @@ import kenzieAcademyLogo from "../../assets/kenzieAcademyLogo.png";
 import CruzeiroDoSulLogo from "../../assets/CruzeiroDoSulLogo.png";
 import CameraIcon from "../../assets/CameraIcon.png";
 import Pernambucanas from "../../assets/Pernambucanas.png";
+import uninter from "../../assets/uninter.png";
 
 export const AboutMe = () => {
   return (
@@ -79,7 +80,8 @@ export const AboutMe = () => {
             na cidade de Araxá-MG. No meu tempo livre gosto de desenhar, ler,
             jogar, estar com meus amigos e familia. Sou Desenvolvedor Front End
             formado pela Kenzie Academy Brasil, onde iniciei minha conexão com a
-            área de programação, e sou Técnologo em Fotografia.
+            área de programação, e atualmente iniciei uma graduação em Análise e
+            Desenvolvimento de Sistemas na Uninter.
           </Text>
           <Text mb="20px">
             Devido minhas notas e soft skills na Kenzie Academy Brasil, preenchi
@@ -157,8 +159,29 @@ export const AboutMe = () => {
                 <Image
                   boxSize="70px"
                   objectFit="cover"
+                  src={uninter}
+                  alt="Uninter"
+                />
+              </Box>
+              <Box w={{ base: "70%", md: "50%" }}>
+                <Text fontWeight="700" fontSize="xl">
+                  Uninter
+                </Text>
+                <Text lineHeight="12px" fontStyle="italic">
+                  Análise e Desenvolvimento de Sistemas
+                </Text>
+                <Text fontSize="sm" mt="7px" color="gray">
+                  out de 2022
+                </Text>
+              </Box>
+            </Center>
+            <Center alignItems="flex-start" mt="40px">
+              <Box mr="10px">
+                <Image
+                  boxSize="70px"
+                  objectFit="cover"
                   src={kenzieAcademyLogo}
-                  alt="Dan Abramov"
+                  alt="Kenzie Academy"
                 />
               </Box>
               <Box w={{ base: "70%", md: "50%" }}>
@@ -186,7 +209,7 @@ export const AboutMe = () => {
                   boxSize="70px"
                   objectFit="cover"
                   src={CruzeiroDoSulLogo}
-                  alt="Dan Abramov"
+                  alt="Cruzeiro do Sul"
                 />
               </Box>
               <Box w={{ base: "70%", md: "50%" }}>
