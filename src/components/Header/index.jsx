@@ -30,7 +30,7 @@ export const Header = () => {
       flexWrap="wrap"
     >
       <Heading fontSize="xl" color={theme.colors.blue[900]}>
-        &lt;Portifólio/&gt;
+        &lt;Portfólio/&gt;
       </Heading>
 
       <Box>

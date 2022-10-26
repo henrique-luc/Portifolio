@@ -60,7 +60,7 @@ export const Resume = () => {
               mb="20px"
             >
               Meu nome é Henrique, tenho 24 anos, sou uma pessoa LGBTQIA+ e moro
-              na cidade de Araxá-MG. Sou Desenvolvedor Front End formado pela
+              na cidade de Araxá-MG. Sou Desenvolvedor Front End certificado pela
               Kenzie Academy Brasil, onde iniciei minha conexão com a área de
               programação. Atualmente iniciei o curso de Análise e
               Desenvolvimento de Sistemas pela Uninter.

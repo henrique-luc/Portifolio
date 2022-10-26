@@ -79,7 +79,7 @@ export const AboutMe = () => {
             Meu nome é Henrique, tenho 24 anos, sou uma pessoa LGBTQIA+ e moro
             na cidade de Araxá-MG. No meu tempo livre gosto de desenhar, ler,
             jogar, estar com meus amigos e familia. Sou Desenvolvedor Front End
-            formado pela Kenzie Academy Brasil, onde iniciei minha conexão com a
+            certificado pela Kenzie Academy Brasil, onde iniciei minha conexão com a
             área de programação, e atualmente iniciei uma graduação em Análise e
             Desenvolvimento de Sistemas na Uninter.
           </Text>
