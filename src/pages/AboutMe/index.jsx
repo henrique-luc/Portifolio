@@ -76,7 +76,7 @@ export const AboutMe = () => {
       >
         <Box textAlign="justify" w={{ base: "90%", md: "60%" }}>
           <Text mb="20px">
-            Meu nome é Henrique, tenho 24 anos, sou uma pessoa LGBTQIA+ e moro
+            Meu nome é Henrique, tenho 25 anos, sou uma pessoa LGBTQIA+ e moro
             na cidade de Araxá-MG. No meu tempo livre gosto de desenhar, ler,
             jogar, estar com meus amigos e familia. Sou Desenvolvedor Front End
             certificado pela Kenzie Academy Brasil, onde iniciei minha conexão com a
