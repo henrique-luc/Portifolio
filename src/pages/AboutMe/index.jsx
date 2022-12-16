@@ -15,10 +15,11 @@ import { Header } from "../../components/Header";
 import { theme } from "../../styles/theme";
 
 import kenzieAcademyLogo from "../../assets/kenzieAcademyLogo.png";
-import CruzeiroDoSulLogo from "../../assets/CruzeiroDoSulLogo.png";
+import Gdsc from "../../assets/Gdsc.png";
 import CameraIcon from "../../assets/CameraIcon.png";
 import Pernambucanas from "../../assets/Pernambucanas.png";
 import uninter from "../../assets/uninter.png";
+import Self from "../../assets/Self.jpg";
 
 export const AboutMe = () => {
   return (
@@ -76,19 +77,40 @@ export const AboutMe = () => {
       >
         <Box textAlign="justify" w={{ base: "90%", md: "60%" }}>
           <Text mb="20px">
-            Meu nome é Henrique, tenho 25 anos, sou uma pessoa LGBTQIA+ e moro
-            na cidade de Araxá-MG. No meu tempo livre gosto de desenhar, ler,
-            jogar, estar com meus amigos e familia. Sou Desenvolvedor Front End
-            certificado pela Kenzie Academy Brasil, onde iniciei minha conexão com a
-            área de programação, e atualmente iniciei uma graduação em Análise e
-            Desenvolvimento de Sistemas na Uninter.
+            Meu nome é Henrique, tenho 25 anos, e moro na cidade de Araxá-MG. No
+            meu tempo livre gosto de desenhar, ler, jogar, estar com meus amigos
+            e familia. Sou Desenvolvedor Front End certificado pela Kenzie
+            Academy Brasil, onde iniciei minha conexão com a área de
+            programação. Atualmente iniciei o curso de Análise e Desenvolvimento
+            de Sistemas pela Uninter, faço estágio de UX/UI na Self Intelligence
+            for Life e faço parte do Google DSC Uninter.
           </Text>
           <Text mb="20px">
             Devido minhas notas e soft skills na Kenzie Academy Brasil, preenchi
-            os requisitos para ser Peer Coach (monitoria) que exerce a função de
-            tirar dúvidas dos desenvolvedores que estão iniciando em novos
-            módulos, corrigir as atividades propostas e aplicar testes técnicos,
-            com apenas 2 meses de estudo.
+            os requisitos para ser monitor onde exercia a função de tirar
+            dúvidas dos desenvolvedores que estão iniciando em novos módulos,
+            corrigir as atividades propostas e aplicar testes técnicos.
+          </Text>
+          <Text mb="20px">
+            Atualmente faço parte do Google DSC Uninter que é um grupo de
+            estudantes onde nossos principais objetivos, além de evoluirmos como
+            estudantes e profissionais é claro, são de organizar eventos de
+            tecnologia para os outros alunos da universidade (e de fora também!)
+            e tentar trazer o máximo de profissionais e conhecimento do mercado
+            de trabalho para agregar valor aos outros estudantes, incluindo os
+            engenheiros e experts da Google que se dispõem a participar dos
+            eventos dos DSCs como palestrantes. Podemos organizar meetups,
+            hackatons, tudo mais o que nossa criatividade permitir e
+            conseguirmos organizar. Além disso somos incentivamos a desenvolver
+            aplicações e soluções que possam ajudar a comunidade universitária e
+            local, seja ajudando pequenos negócios a se digitalizarem,
+            auxiliando uma escola de alguma forma, alguma ONG, jovens
+            estudantes, comunidades carentes, etc.
+          </Text>
+          <Text mb="20px">
+            Além disso faço parte da equipe da Self Intelligence for Life como
+            Estagiário em UX/UI, desenvolvendo e projetando telas em Figma para
+            desenvolvedores front-end implementarem nas aplicações.
           </Text>
           <Text mb="20px">
             Sou um profissional capaz e que gosta de aprender e ensinar. Vejo a
@@ -203,27 +225,6 @@ export const AboutMe = () => {
                 </Text>
               </Box>
             </Center>
-            <Center alignItems="flex-start" mt="40px">
-              <Box mr="10px">
-                <Image
-                  boxSize="70px"
-                  objectFit="cover"
-                  src={CruzeiroDoSulLogo}
-                  alt="Cruzeiro do Sul"
-                />
-              </Box>
-              <Box w={{ base: "70%", md: "50%" }}>
-                <Text fontWeight="700" fontSize="xl">
-                  Cruzeiro do Sul Virtual
-                </Text>
-                <Text lineHeight="12px" fontStyle="italic">
-                  Tecnólogo Fotografia
-                </Text>
-                <Text fontSize="sm" mt="7px" color="gray">
-                  mai de 2018 - mai de 2020
-                </Text>
-              </Box>
-            </Center>
           </Box>
         </Center>
       </Center>
@@ -252,11 +253,88 @@ export const AboutMe = () => {
               w="50%"
             >
               <Box mr="10px" pl="40px">
+                <Image boxSize="70px" objectFit="cover" src={Self} alt="Self" />
+              </Box>
+
+              <Box>
+                <Text fontWeight="700" fontSize="xl">
+                  Self Intelligence for Life
+                </Text>
+                <Text lineHeight="12px" fontStyle="italic">
+                  Estágio em UX/UI
+                </Text>
+                <Text fontSize="sm" mt="7px" color="gray">
+                  dez de 2022 - atual
+                </Text>
+
+                <UnorderedList
+                  fontSize="sm"
+                  mt="7px"
+                  textAlign="justify"
+                  ml="20px"
+                >
+                  <ListItem>Projetar telas utilizando Figma;</ListItem>
+                  <ListItem>
+                    Participar de reuniões com clientes e elaborar propostas
+                    visuais;
+                  </ListItem>
+                </UnorderedList>
+              </Box>
+            </Box>
+          </Center>
+
+          <Center alignItems="flex-start" mt={3} mb={3}>
+            <Box
+              display="flex"
+              flexDirection="row-reverse"
+              borderRight="2px"
+              borderColor={theme.colors.red[100]}
+              w="50%"
+              ml="5px"
+            >
+              <Box ml="10px" pr="40px">
+                <Image boxSize="70px" objectFit="fit" src={Gdsc} alt="Gdsc" />
+              </Box>
+
+              <Box textAlign="right">
+                <Text fontWeight="700" fontSize="xl">
+                  Google DSC Uninter
+                </Text>
+                <Text lineHeight="12px" fontStyle="italic">
+                  Desenvolvedor Web Front End
+                </Text>
+                <Text fontSize="sm" mt="7px" color="gray">
+                  dez de 2022 - atual
+                </Text>
+
+                <UnorderedList
+                  fontSize="sm"
+                  mt="7px"
+                  textAlign="justify"
+                  ml="20px"
+                >
+                  <ListItem>Auxiliar nos eventos propostos;</ListItem>
+                  <ListItem>Desenvolver aplicações web;</ListItem>
+                </UnorderedList>
+              </Box>
+            </Box>
+            <Box w="50%"></Box>
+          </Center>
+
+          <Center alignItems="flex-start">
+            <Box w="50%"></Box>
+            <Box
+              display="flex"
+              borderLeft="2px"
+              borderColor={theme.colors.red[100]}
+              w="50%"
+            >
+              <Box mr="10px" pl="40px">
                 <Image
                   boxSize="70px"
                   objectFit="cover"
                   src={kenzieAcademyLogo}
-                  alt="Dan Abramov"
+                  alt="Kenzie Academy"
                 />
               </Box>
 
@@ -265,7 +343,7 @@ export const AboutMe = () => {
                   Kenzie Academy Brasil
                 </Text>
                 <Text lineHeight="12px" fontStyle="italic">
-                  Peer Coach (Monitoria)
+                  Monitor
                 </Text>
                 <Text fontSize="sm" mt="7px" color="gray">
                   fev de 2022 - mai de 2022
@@ -329,48 +407,6 @@ export const AboutMe = () => {
               </Box>
             </Box>
             <Box w="50%"></Box>
-          </Center>
-
-          <Center alignItems="flex-start" mt={3}>
-            <Box w="50%"></Box>
-            <Box
-              display="flex"
-              borderLeft="2px"
-              borderColor={theme.colors.red[100]}
-              w="50%"
-            >
-              <Box mr="10px" pl="40px">
-                <Image
-                  boxSize="70px"
-                  objectFit="cover"
-                  src={Pernambucanas}
-                  alt="Dan Abramov"
-                />
-              </Box>
-
-              <Box>
-                <Text fontWeight="700" fontSize="xl">
-                  Pernambucanas
-                </Text>
-                <Text lineHeight="12px" fontStyle="italic">
-                  Atendimento ao Cliente
-                </Text>
-                <Text fontSize="sm" mt="7px" color="gray">
-                  fev de 2016 - ago de 2016
-                </Text>
-
-                <UnorderedList
-                  fontSize="sm"
-                  mt="7px"
-                  textAlign="justify"
-                  ml="20px"
-                >
-                  <ListItem>Atendimento ao cliente;</ListItem>
-                  <ListItem>Estoque;</ListItem>
-                  <ListItem>Caixa;</ListItem>
-                </UnorderedList>
-              </Box>
-            </Box>
           </Center>
         </Box>
 

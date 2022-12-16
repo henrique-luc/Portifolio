@@ -59,11 +59,12 @@ export const Resume = () => {
               textAlign={{ base: "justify", md: "left" }}
               mb="20px"
             >
-              Meu nome é Henrique, tenho 25 anos, sou uma pessoa LGBTQIA+ e moro
-              na cidade de Araxá-MG. Sou Desenvolvedor Front End certificado pela
-              Kenzie Academy Brasil, onde iniciei minha conexão com a área de
-              programação. Atualmente iniciei o curso de Análise e
-              Desenvolvimento de Sistemas pela Uninter.
+              Meu nome é Henrique, tenho 25 anos, e moro na cidade de Araxá-MG.
+              Sou Desenvolvedor Front End certificado pela Kenzie Academy
+              Brasil, onde iniciei minha conexão com a área de programação.
+              Atualmente iniciei o curso de Análise e Desenvolvimento de
+              Sistemas pela Uninter, faço estágio de UX/UI na Self Intelligence
+              for Life e faço parte do Google DSC Uninter.
             </Text>
             <Link href="/sobre-mim">
               <Button
